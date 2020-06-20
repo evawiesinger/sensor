@@ -21,7 +21,7 @@
 //https://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067
   window.addEventListener('devicemotion', function(event){
 
-    var xacceleration= event.acceleration.x;
+    var xacceleration= Math.round(event.acceleration.x*10)/10;
     document.getElementById("accel-x").innerHTML=xacceleration;
     
     });
