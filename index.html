@@ -14,4 +14,12 @@
 <p></p>
 <div>Kompass (alpha, beta, gamma) = (<span id="orientation-a"></span>,<span id="orientation-b"></span>,<span id="orientation-g"></span>)</div>
 <script>
+  
+  window.addEventListener('devicemotion', function(event){
 
+    var xacceleration= event.acceleration.x;
+    document.getElementById("accel-x").innerHTML=xacceleration;
+    
+    });
+    
+  </script>
